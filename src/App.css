@@ -1,0 +1,207 @@
+/* App.css */
+.holiday-theme {
+  background: linear-gradient(to bottom, #0a2e0a, #0d3b0d);
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Barra de navegación */
+.holiday-nav {
+  background-color: #1a472a !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-bottom: 3px solid #c62828;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #ffeb3b !important;
+}
+
+.nav-brand-icon {
+  font-size: 1.8rem;
+  margin-right: 8px;
+}
+
+.nav-link {
+  color: #fff !important;
+  margin: 0 5px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-link:hover, .nav-link.active {
+  background-color: #c62828;
+  color: #fff !important;
+  transform: translateY(-2px);
+}
+
+.nav-icon {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+/* Encabezado */
+.holiday-header {
+  background: linear-gradient(45deg, #1a472a, #2e7d32);
+  border: 2px solid #ffeb3b;
+  box-shadow: 0 0 15px rgba(255, 235, 59, 0.5);
+}
+
+/* Tarjetas */
+.holiday-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #4caf50;
+  color: #fff;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.holiday-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.holiday-card .card-title {
+  color: #ffeb3b;
+  border-bottom: 1px solid #4caf50;
+  padding-bottom: 10px;
+}
+
+/* Listas */
+.holiday-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.holiday-list li {
+  padding: 8px 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+  position: relative;
+  padding-left: 30px;
+}
+
+.holiday-list li:before {
+  content: "❄️";
+  position: absolute;
+  left: 0;
+}
+
+/* Tablas */
+.holiday-table {
+  color: #fff;
+}
+
+.holiday-table thead th {
+  background-color: #1a472a;
+  color: #ffeb3b;
+  border-bottom: 2px solid #c62828;
+}
+
+.holiday-table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Galería */
+.gallery-item {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.03);
+}
+
+.gallery-img-placeholder {
+  height: 180px;
+  background: linear-gradient(45deg, #1a472a, #2e7d32);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+}
+
+/* Botones */
+.btn-holiday {
+  background-color: #c62828;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-holiday:hover {
+  background-color: #ff5722;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(198, 40, 40, 0.4);
+}
+
+/* Iconos sociales */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icon {
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Formulario */
+.form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #4caf50;
+  color: white;
+}
+
+.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: #ffeb3b;
+  color: white;
+  box-shadow: 0 0 0 0.25rem rgba(255, 235, 59, 0.25);
+}
+
+.form-label {
+  color: #ffeb3b;
+}
+
+/* Footer */
+.holiday-footer {
+  background-color: #1a472a;
+  border-top: 3px solid #c62828;
+  color: #ffeb3b;
+  margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-link {
+    margin: 5px 0;
+    text-align: center;
+  }
+  
+  .holiday-header h1 {
+    font-size: 2rem;
+  }
+  
+  .gallery-img-placeholder {
+    height: 150px;
+    font-size: 3rem;
+  }
+}
